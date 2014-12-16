@@ -1,0 +1,36 @@
+html
+  head
+    title aaa
+    include _head.slim
+    
+  body
+
+    / containers
+
+    script type="text/x-template" id="red-template"
+      .col-md-12
+        | {{name}}
+        .row v-repeat="items" v-component="{{component}}"
+
+    script type="text/x-template" id="blue-template"
+      .col-md-12
+        | {{name}}
+        .row v-repeat="items" v-component="{{component}}"
+
+    / itmes
+
+    script type="text/x-template" id="item-image-component"
+      .col-md-12
+        img.img-responsive src="{{src}}"
+
+    script type="text/x-template" id="item-text-component"
+      .col-md-12
+        p style="font-size:{{size}}; color:{{color}}; text-align:{{align}};"
+          | {{text}}
+
+
+    #wrapper
+      .container
+        .panel
+          .panel-body
+            .row v-repeat="containers" v-component="{{component}}"
