@@ -1,60 +1,46 @@
 # @codekit-append "component.coffee"
 
 # @codekit-append "layouts/layout_base.coffee"
-# @codekit-append "layouts/layout_col_12.coffee"
-# @codekit-append "layouts/layout_col_6.coffee"
+# @codekit-append "layouts/one_col_layout.coffee"
+# @codekit-append "layouts/two_col_layout.coffee"
+# @codekit-append "layouts/three_col_layout.coffee"
+# @codekit-append "layouts/left_leaning_layout.coffee"
+# @codekit-append "layouts/right_leaning_layout.coffee"
+# @codekit-append "layouts/small_grid_layout.coffee"
 
-# @codekit-append "items/item_base.coffee"
-# @codekit-append "items/item_image.coffee"
-# @codekit-append "items/item_string.coffee"
-# @codekit-append "items/item_text.coffee"
+# @codekit-append "containers/base_container.coffee"
+# @codekit-append "containers/vertical_container.coffee"
+# @codekit-append "containers/small_grid_container.coffee"
+
+# @codekit-append "items/base_item.coffee"
+# @codekit-append "items/image_item.coffee"
+# @codekit-append "items/string_item.coffee"
+# @codekit-append "items/text_item.coffee"
 
 $ ->
 
-  # new LayoutCol12Component
-  # new LayoutCol6Component
+  new OneColLayout
+  new TwoColLayout
+  new ThreeColLayout
+  new LeftLeaningLayout
+  new RightLeaningLayout
+  new SmallGridLayout
 
-  # new ItemImageComponent
-  # new ItemStringComponent
-  # new ItemTextComponent
+  new VerticalContainer
+  new SmallGridContainer
 
-  Vue.component 'layout-col-12-component',
-    template: '#layout-col-12-component'
-
-  Vue.component 'layout-col-6-component',
-    template: '#layout-col-6-component'
-
-  Vue.component 'container-vertival-component',
-    template: '#container-vertival-component'
+  new ImageItem
+  new StringItem
+  new TextItem
 
   builder = new Vue
     el: '#wrapper'
     data:
       layouts:[
-        {
-          layout: 'layout-col-12-component'
-          innerStyle:{ 'background-color': '#ff0000' }
-          container:
-            items:[
-              {name:'111'}
-              {name:'222'}
-              {name:'333'}
-            ]
-        }
-        {
-          layout: 'layout-col-6-component'
-          innerStyle:{ 'background-color': '#ff0000' }
-          firstContainer:
-            items:[
-              {name:'111'}
-              {name:'222'}
-              {name:'333'}
-            ]
-          secondContainer:
-            items:[
-              {name:'111'}
-              {name:'222'}
-              {name:'333'}
-            ]
-        }
+        {layout: 'one-col-layout'}
+        {layout: 'two-col-layout'}
+        {layout: 'three-col-layout'}
+        {layout: 'left-leaning-layout'}
+        {layout: 'right-leaning-layout'}
+        {layout: 'small-grid-layout'}
       ]

@@ -3823,98 +3823,98 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
-	"\/coffee\/containers\/container_base.coffee": {
-		"createSourceMap": 0,
-		"fileType": 32,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/coffee\/containers\/container_base.coffee",
-		"minifyOutput": 0,
-		"outputAbbreviatedPath": "\/js\/container_base.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
-		},
-	"\/coffee\/containers\/container_grid.coffee": {
-		"createSourceMap": 0,
-		"fileType": 32,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/coffee\/containers\/container_grid.coffee",
-		"minifyOutput": 0,
-		"outputAbbreviatedPath": "\/js\/container_grid.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
-		},
-	"\/coffee\/containers\/container_vertical.coffee": {
-		"createSourceMap": 0,
-		"fileType": 32,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/coffee\/containers\/container_vertical.coffee",
-		"minifyOutput": 0,
-		"outputAbbreviatedPath": "\/js\/container_vertical.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
-		},
-	"\/coffee\/items\/item_base.coffee": {
+	"\/coffee\/containers\/base_container.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/coffee\/items\/item_base.coffee",
+		"inputAbbreviatedPath": "\/coffee\/containers\/base_container.coffee",
 		"minifyOutput": 0,
-		"outputAbbreviatedPath": "\/js\/item_base.js",
+		"outputAbbreviatedPath": "\/js\/base_container.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
-	"\/coffee\/items\/item_image.coffee": {
+	"\/coffee\/containers\/small_grid_container.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/coffee\/items\/item_image.coffee",
+		"inputAbbreviatedPath": "\/coffee\/containers\/small_grid_container.coffee",
 		"minifyOutput": 0,
-		"outputAbbreviatedPath": "\/js\/item_image.js",
+		"outputAbbreviatedPath": "\/js\/small_grid_container.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
-	"\/coffee\/items\/item_string.coffee": {
+	"\/coffee\/containers\/vertical_container.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/coffee\/items\/item_string.coffee",
+		"inputAbbreviatedPath": "\/coffee\/containers\/vertical_container.coffee",
 		"minifyOutput": 0,
-		"outputAbbreviatedPath": "\/js\/item_string.js",
+		"outputAbbreviatedPath": "\/js\/vertical_container.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
-	"\/coffee\/items\/item_text.coffee": {
+	"\/coffee\/items\/base_item.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/coffee\/items\/item_text.coffee",
+		"inputAbbreviatedPath": "\/coffee\/items\/base_item.coffee",
 		"minifyOutput": 0,
-		"outputAbbreviatedPath": "\/js\/item_text.js",
+		"outputAbbreviatedPath": "\/js\/base_item.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
+		},
+	"\/coffee\/items\/image_item.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/coffee\/items\/image_item.coffee",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/js\/image_item.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/coffee\/items\/string_item.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/coffee\/items\/string_item.coffee",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/js\/string_item.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/coffee\/items\/text_item.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/coffee\/items\/text_item.coffee",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/js\/text_item.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/coffee\/layouts\/layout_base.coffee": {
 		"createSourceMap": 0,
@@ -3927,33 +3927,85 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
-	"\/coffee\/layouts\/layout_col_12.coffee": {
+	"\/coffee\/layouts\/left_leaning_layout.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/coffee\/layouts\/layout_col_12.coffee",
+		"inputAbbreviatedPath": "\/coffee\/layouts\/left_leaning_layout.coffee",
 		"minifyOutput": 0,
-		"outputAbbreviatedPath": "\/js\/layout_col_12.js",
+		"outputAbbreviatedPath": "\/js\/left_leaning_layout.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
 		},
-	"\/coffee\/layouts\/layout_col_6.coffee": {
+	"\/coffee\/layouts\/one_col_layout.coffee": {
 		"createSourceMap": 0,
 		"fileType": 32,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/coffee\/layouts\/layout_col_6.coffee",
+		"inputAbbreviatedPath": "\/coffee\/layouts\/one_col_layout.coffee",
 		"minifyOutput": 0,
-		"outputAbbreviatedPath": "\/js\/layout_col_6.js",
+		"outputAbbreviatedPath": "\/js\/one_col_layout.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
+		"syntaxCheckerStyle": 0
+		},
+	"\/coffee\/layouts\/right_leaning_layout.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/coffee\/layouts\/right_leaning_layout.coffee",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/js\/right_leaning_layout.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/coffee\/layouts\/small_grid_layout.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/coffee\/layouts\/small_grid_layout.coffee",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/js\/small_grid_layout.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/coffee\/layouts\/three_col_layout.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/coffee\/layouts\/three_col_layout.coffee",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/js\/three_col_layout.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/coffee\/layouts\/two_col_layout.coffee": {
+		"createSourceMap": 0,
+		"fileType": 32,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/coffee\/layouts\/two_col_layout.coffee",
+		"minifyOutput": 0,
+		"outputAbbreviatedPath": "\/js\/two_col_layout.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
 		},
 	"\/css\/application.css": {
 		"fileType": 16,
@@ -3986,6 +4038,50 @@
 		"outputStyle": 1,
 		"railsCompatible": 0
 		},
+	"\/js\/base_container.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/base_container.js",
+		"outputAbbreviatedPath": "\/js\/min\/base_container-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/base_item.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/base_item.js",
+		"outputAbbreviatedPath": "\/js\/min\/base_item-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/container_base.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/container_base.js",
+		"outputAbbreviatedPath": "\/js\/min\/container_base-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/container_grid.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/container_grid.js",
+		"outputAbbreviatedPath": "\/js\/min\/container_grid-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/item_string.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -4008,6 +4104,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/left_leaning_layout.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/left_leaning_layout.js",
+		"outputAbbreviatedPath": "\/js\/min\/left_leaning_layout-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/medium-editor.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -4019,12 +4126,56 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/one_col_layout.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/one_col_layout.js",
+		"outputAbbreviatedPath": "\/js\/min\/one_col_layout-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/small_grid_container.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/small_grid_container.js",
+		"outputAbbreviatedPath": "\/js\/min\/small_grid_container-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/small_grid_layout.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/small_grid_layout.js",
+		"outputAbbreviatedPath": "\/js\/min\/small_grid_layout-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/test.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/test.js",
 		"outputAbbreviatedPath": "\/js\/min\/test-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/three-col-layout.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/three-col-layout.js",
+		"outputAbbreviatedPath": "\/js\/min\/three-col-layout-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -4192,7 +4343,7 @@
 		},
 	"coffeeMinifyOutput": 0,
 	"coffeeOutputStyle": 0,
-	"coffeeSyntaxCheckerStyle": 1,
+	"coffeeSyntaxCheckerStyle": 0,
 	"externalServerAddress": "http:\/\/localhost:8888",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",

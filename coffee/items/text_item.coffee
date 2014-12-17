@@ -1,4 +1,4 @@
-class ItemTextComponent extends ItemBaseComponent
+class TextItem extends BaseItem
   
   @defaultConfig:
     model:
@@ -11,3 +11,4 @@ class ItemTextComponent extends ItemBaseComponent
       disableToolbar: false
 
   init: () ->
+    Vue.component(@componentName, @component)

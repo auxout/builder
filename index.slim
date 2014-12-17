@@ -6,24 +6,90 @@ html lang="ja"
     
   body
 
-    script type="text/x-template" id="layout-col-12-component"
+    / ================================================
+    / Layout
+    / ================================================
+
+    / one-col-layout
+    script type="text/x-template" id="one-col-layout"
       .inner v-style="innerStyle"
         .container
           .row
-            .col-md-12 v-component="container-vertival-component" v-with="container"
+            .col-md-12 v-component="vertical-container" v-with="container"
 
-    script type="text/x-template" id="layout-col-6-component"
+    / two-col-layout
+    script type="text/x-template" id="two-col-layout"
       .inner v-style="innerStyle"
         .container
           .row
-            .col-md-6 v-component="container-vertival-component" v-with="firstContainer"
-            .col-md-6 v-component="container-vertival-component" v-with="secondContainer"
+            .col-md-6 v-component="vertical-container" v-with="container[0]"
+            .col-md-6 v-component="vertical-container" v-with="container[1]"
 
-    script type="text/x-template" id="container-vertival-component"
+    / three-col-layout
+    script type="text/x-template" id="three-col-layout"
+      .inner v-style="innerStyle"
+        .container
+          .row
+            .col-md-4 v-component="vertical-container" v-with="container[0]"
+            .col-md-4 v-component="vertical-container" v-with="container[1]"
+            .col-md-4 v-component="vertical-container" v-with="container[2]"
+
+    / left-leaning-layout
+    script type="text/x-template" id="left-leaning-layout"
+      .inner v-style="innerStyle"
+        .container
+          .row
+            .col-md-8 v-component="vertical-container" v-with="container[0]"
+            .col-md-4 v-component="vertical-container" v-with="container[1]"
+
+    / right-leaning-layout
+    script type="text/x-template" id="right-leaning-layout"
+      .inner v-style="innerStyle"
+        .container
+          .row
+            .col-md-4 v-component="vertical-container" v-with="container[1]"
+            .col-md-8 v-component="vertical-container" v-with="container[0]"
+
+    / small-grid-layout
+    script type="text/x-template" id="small-grid-layout"
+      .inner v-style="innerStyle"
+        .container
+          .row
+            .col-md-12 v-component="small-grid-container" v-with="container"
+
+    / ================================================
+    / Container
+    / ================================================
+
+    / vertical-container
+    script type="text/x-template" id="vertical-container"
       .content
-        .item v-repeat="items"
-          | {{name}}
-      
+        .row
+          .col-md-12 v-repeat="items" v-component="{{item}}"
+
+    / small-grid-container
+    script type="text/x-template" id="small-grid-container"
+      .content
+        .row
+          .col-md-3 v-repeat="items" v-component="{{item}}"
+
+    / ================================================
+    / Item
+    / ================================================
+
+    script type="text/x-template" id="image-item"
+      .item.image
+        img.img-responsive v-attr="src: src"
+
+    script type="text/x-template" id="string-item"
+      .item.text v-editable="text"
+
+    script type="text/x-template" id="text-item"
+      .item.text v-editable="text"
+
+    / ================================================
+    / Wrapper
+    / ================================================
 
     #wrapper
-      section v-repeat="layouts" v-component="{{component}}"
+      section v-repeat="layouts" v-component="{{layout}}"
