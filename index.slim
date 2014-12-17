@@ -1,36 +1,29 @@
-html
+doctype html
+html lang="ja"
   head
     title aaa
     include _head.slim
     
   body
 
-    / containers
+    script type="text/x-template" id="layout-col-12-component"
+      .inner v-style="innerStyle"
+        .container
+          .row
+            .col-md-12 v-component="container-vertival-component" v-with="container"
 
-    script type="text/x-template" id="red-template"
-      .col-md-12
-        | {{name}}
-        .row v-repeat="items" v-component="{{component}}"
+    script type="text/x-template" id="layout-col-6-component"
+      .inner v-style="innerStyle"
+        .container
+          .row
+            .col-md-6 v-component="container-vertival-component" v-with="firstContainer"
+            .col-md-6 v-component="container-vertival-component" v-with="secondContainer"
 
-    script type="text/x-template" id="blue-template"
-      .col-md-12
-        | {{name}}
-        .row v-repeat="items" v-component="{{component}}"
-
-    / itmes
-
-    script type="text/x-template" id="item-image-component"
-      .col-md-12
-        img.img-responsive src="{{src}}"
-
-    script type="text/x-template" id="item-text-component"
-      .col-md-12
-        p style="font-size:{{size}}; color:{{color}}; text-align:{{align}};"
-          | {{text}}
-
+    script type="text/x-template" id="container-vertival-component"
+      .content
+        .item v-repeat="items"
+          | {{name}}
+      
 
     #wrapper
-      .container
-        .panel
-          .panel-body
-            .row v-repeat="containers" v-component="{{component}}"
+      section v-repeat="layouts" v-component="{{component}}"

@@ -1,0 +1,43 @@
+{
+  "name": "Medium.js",
+  "author": "Jakob Kelly <jakie8@gmail.com> (http://jakiestfu.com)",
+  "contributors": [
+    {
+      "name": "Robert Plummer <robertleeplummerjr@gmail.com> (http://visop-dev.com)"
+    }
+  ],
+  "homepage": "http://jakiestfu.github.io/Medium.js",
+  "bugs": "https://github.com/jakiestfu/Medium.js/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakiestfu/Medium.js"
+  },
+  "dependencies": {
+    "rangy-official": ">=1.3",
+    "undo": "https://github.com/jzaefferer/undo/archive/master.zip",
+    "testify.js": ">=1.0"
+  },
+  "keywords": [
+    "editor",
+    "wysiwyg",
+    "contenteditable",
+    "content",
+    "medium",
+    "medium.com"
+  ],
+  "license": "MIT",
+  "files": [
+    "medium.js",
+    "medium.css"
+  ],
+  "_release": "9144a17c13",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "9144a17c135975491ac84ab15e398a1f3a895622"
+  },
+  "_source": "git://github.com/jakiestfu/Medium.js.git",
+  "_target": "*",
+  "_originalSource": "medium.js",
+  "_direct": true
+}

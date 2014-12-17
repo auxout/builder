@@ -1,42 +1,60 @@
+# @codekit-append "component.coffee"
+
+# @codekit-append "layouts/layout_base.coffee"
+# @codekit-append "layouts/layout_col_12.coffee"
+# @codekit-append "layouts/layout_col_6.coffee"
+
 # @codekit-append "items/item_base.coffee"
 # @codekit-append "items/item_image.coffee"
+# @codekit-append "items/item_string.coffee"
 # @codekit-append "items/item_text.coffee"
 
 $ ->
 
-  # Vue.component 'red',
-  #   template: '#red-template'
+  # new LayoutCol12Component
+  # new LayoutCol6Component
 
-  # Vue.component 'blue',
-  #   template: '#blue-template'
+  # new ItemImageComponent
+  # new ItemStringComponent
+  # new ItemTextComponent
 
-  img = new ItemImageComponent
-  text = new ItemTextComponent
+  Vue.component 'layout-col-12-component',
+    template: '#layout-col-12-component'
+
+  Vue.component 'layout-col-6-component',
+    template: '#layout-col-6-component'
+
+  Vue.component 'container-vertival-component',
+    template: '#container-vertival-component'
 
   builder = new Vue
     el: '#wrapper'
-    components:
-      red:
-        template: '#red-template'
-      blue:
-        template: '#blue-template'
     data:
-      containers:[
+      layouts:[
         {
-          component: 'red'
-          name: 'red'
-          items:[
-            {
-              component: 'item-image-component'
-              src: 'https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/1461847_620993098012076_730628183140157389_n.jpg?oh=29fc0fc7d7cf538f8bd0416004b4b13f&oe=54FAE28F&__gda__=1426473842_887ce6c8b023ab0f04828d3176338ba5'
-            }
-            {
-              component: 'item-text-component'
-            }
-          ]
+          layout: 'layout-col-12-component'
+          innerStyle:{ 'background-color': '#ff0000' }
+          container:
+            items:[
+              {name:'111'}
+              {name:'222'}
+              {name:'333'}
+            ]
         }
         {
-          component: 'blue'
-          name: 'blue'
+          layout: 'layout-col-6-component'
+          innerStyle:{ 'background-color': '#ff0000' }
+          firstContainer:
+            items:[
+              {name:'111'}
+              {name:'222'}
+              {name:'333'}
+            ]
+          secondContainer:
+            items:[
+              {name:'111'}
+              {name:'222'}
+              {name:'333'}
+            ]
         }
       ]

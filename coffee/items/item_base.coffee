@@ -1,22 +1,25 @@
-class ItemBaseComponent
-
-  dashnize = (str) ->
-    str.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase()
+class ItemBaseComponent extends Component
 
   constructor: (@config = {}) ->
-
-    # デフォルトコンフィグとマージ
-    @config = $.extend @constructor.defaultConfig, @config
-
-    # ダッシュナイズされたコンポーネント名
-    @componentName = dashnize(@constructor.name)
+    super @config
 
     # VueComponentを初期化
-    Vue.component @componentName,
+    @component = Vue.component @componentName,
       template: "##{@componentName}"
-      data: () =>
-        @config
+      directives:
+        editable:
+          bind: ->
+            new MediumEditor @el, @vm.editable
+            $(@el).html @vm.model.text
+            $(@el).on 'input', (e) =>
+                @vm.model.text = $(e.target).html()
+      methods:
+        addChild: ->
+          @$parent.items.splice @$index+1, 0,
+            component: 'item-image-component'
 
+      data: =>
+        @config
 
     # 子クラスにエントリーポイント
     @init?()
